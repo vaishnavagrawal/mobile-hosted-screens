@@ -12,7 +12,7 @@ function WIP() {
           fontSize: 14,
         }}
       > 
-        <a href="/doc.html">Visit doc</a>
+        <a href="/docs.html">Visit docs</a>
       </p>
     </div>
   )
