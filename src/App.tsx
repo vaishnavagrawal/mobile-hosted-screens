@@ -1,21 +1,23 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import WIP from "./pages/WIP";
 
 function App() {
   return (
-    <div style={{}}>
-      <h1>Work In Progress</h1>
 
-      <p className="read-the-docs">We will go live soon. Stay tuned</p>
-      <p
-        className="read-the-docs"
-        style={{
-          fontStyle: "italic",
-          fontSize: 14,
-        }}
-      >
-        Vist <a>https://vegapay.tech/</a>
-      </p>
-    </div>
+
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<WIP/>}>
+        <Route index element={<WIP />} />
+        {/* <Route path="docs" element={<Docs />} /> */}
+        {/* <Navigate to={"/doc.html"}  replace={true} /> */}
+
+        {/* <Route path="*" element={<NoPage />} /> */}
+      </Route>
+    </Routes>
+  </BrowserRouter>
+
   );
 }
 
